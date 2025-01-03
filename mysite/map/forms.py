@@ -139,6 +139,25 @@ class MapSourceAdminForm(forms.ModelForm):
                         "disable_collapse": True,
                     },
                 },
+                {
+                    "title": "GeoJSON",
+                    "type": "object",
+                    "format": "grid",
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": ["geojson"],
+                            "options": {"hidden": True},
+                        },
+                        "data": {"type": "string"},
+                    },
+                    "required": [
+                        "type",
+                    ],
+                    "options": {
+                        "disable_collapse": True,
+                    },
+                },
             ],
         }
         widgets = {
