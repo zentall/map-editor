@@ -3,13 +3,33 @@ This application is a Django-based system for managing and hosting map configura
 
 ## Getting started
 
-1. Clone this repogitry. ```git clone https://github.com/zentall/map-editor.git```
-2. install modules. ```pipenv install```
-3. activate virtual environment. ```pipenv shell```
-4. create super user for admin site. ```python manage.py createsuperuser```
-5. run dev server. ```python manage.py runserver```
-6. login to ```http://localhost:8000/admin/```
+1. **Clone this repository**  
+   ```bash
+   git clone https://github.com/zentall/map-editor.git
+   ```
 
+2. **Install required modules**  
+   ```bash
+   pipenv install
+   ```
+
+3. **Activate the virtual environment**  
+   ```bash
+   pipenv shell
+   ```
+
+4.  **Create a superuser for the admin site**  
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+5.  **Run the development server**  
+   ```bash
+   python manage.py runserver
+   ```
+
+6.  **Log in to the admin site**  
+   Open [http://localhost:8000/admin/](http://localhost:8000/admin/) in your browser and log in using the superuser credentials.
 
 ## Data flow
 ```mermaid
