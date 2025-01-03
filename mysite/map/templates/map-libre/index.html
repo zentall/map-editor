@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <title>サンプル</title>
+    <meta name="description" content="サンプルです" />
+    <link href="{% static 'map-libre/css/map.css' %}" rel="stylesheet" />
+    <!-- MapLibre GL JS -->
+    <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
+    <!-- PMTiles -->
+    <script src="https://unpkg.com/pmtiles/dist/pmtiles.js"></script>
+    <!-- map option -->
+    {{ map_options|json_script:"map_options" }}
+</head>
+
+<body>
+    <div id="map"></div>
+    <script src="{% static 'map-libre/js/main.js' %}"></script>
+</body>
+
+</html>
