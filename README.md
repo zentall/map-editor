@@ -19,17 +19,17 @@ This application is a Django-based system for managing and hosting map configura
    ```
 
 4.  **Create a superuser for the admin site**  
-   ```bash
-   python manage.py createsuperuser
-   ```
+    ```bash
+    python manage.py createsuperuser
+    ```
 
 5.  **Run the development server**  
-   ```bash
-   python manage.py runserver
-   ```
+    ```bash
+    python manage.py runserver
+    ```
 
 6.  **Log in to the admin site**  
-   Open [http://localhost:8000/admin/](http://localhost:8000/admin/) in your browser and log in using the superuser credentials.
+    Open [http://localhost:8000/admin/](http://localhost:8000/admin/) in your browser and login using the superuser credentials.
 
 ## Data flow
 ```mermaid
